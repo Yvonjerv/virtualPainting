@@ -109,4 +109,4 @@ while True:
     cv2.imshow("Image", img)
     cv2.imshow("Canvas", imgCanvas)
     cv2.imshow("Inv", imgInv)
-    cv2.waitKey(0)
+    cv2.waitKey(1)
