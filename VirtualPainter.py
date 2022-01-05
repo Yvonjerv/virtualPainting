@@ -17,14 +17,14 @@ myList = os.listdir(folderPath)
 print(myList)
 overlayList = []
 for imPath in myList:
-    image = cv2.imread(f'{folderPath}/{imPath}’)
+    image = cv2.imread(f'{folderPath}/{imPath}')
     overlayList.append(image)
 
 print(len(overlayList))
 header = overlayList[0]
 drawColor = (255, 0, 255)
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 cap.set(3, 1280)
 cap.set(4, 720)
 
