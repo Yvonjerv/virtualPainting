@@ -94,7 +94,7 @@ while True:
             xp, yp = x1, y1
     
     # Clear Canvas when all fingers are up
-    if all (x >= 1 for x in fingers):
+    if all(x >= 1 for x in fingers):
         imgCanvas = np.zeros((720, 1280, 3), np.uint8)
     
     imgGray = cv2.cvtColor(imgCanvas, cv2.COLOR_BGR2GRAY)
